@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1"><!-- display webpage in edge mode/IE in highest supported document mode -->
+
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>JQuery Portfolio Gallery</title>
+</head>
+
+<body>
+	<div class="outer-container">
+		<div class="backdrop"></div><!-- end .backdrop -->
+		<div class="slider">
+			<div class="slider__item">
+				<div class="slider__option next">
+					<img class="control" src="images/next.png" alt="">
+				</div><!-- end .slider__option -->
+				<div class="slider__option prev">
+					<img class="control" src="images/prev.png" alt="">
+				</div><!-- end .slider__option -->
+
+				<div class="slider__images"></div><!-- end .slider__images -->
+
+			</div><!-- end .slider__item -->
+			<div class="slider__controls">
+				<div class="slider__close">
+					<img src="images/close.png" alt="" class="icon">
+				</div><!-- end .slider__close -->
+				<div class="slider__info">
+					<h3 class="slider__title"></h3>
+					<p class="slider__content">
+						image <span class="current"></span> of <span class="total"></span>
+					</p>
+				</div><!-- end .slider__info -->
+			</div><!-- end .slider__controls -->
+		</div><!-- end slider -->
+		<header class="header">
+			<div class="top-header">
+				<div class="inner-container top-header__container">
+					<div class="logo">
+						<h1 class="logo__img">
+							P Gallery
+						</h1>
+					</div><!-- end .logo -->
+					<div class="menu-toggle">
+						<span class="menu-toggle__icon fa fa-bars"></span>
+					</div><!-- end .menu-toggle -->
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">All Projects</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Design</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Programming</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">CMS</a></li>
+						</ul>
+					</nav>
+				</div><!-- end .inner-container -->
+			</div><!-- end .top-header -->
+
+			<div class="banner">
+				<div class="inner-container">
+					<h2 class="banner__tagline">view our work</h2>
+				</div><!-- end .inner-container -->
+			</div><!-- end .banner -->
+
+		</header>
+		<main class="main">
+			<section class="projects">
+				<div class="inner-container">
+					<h2 class="projects-title">All Projects</h2>
+					<div class="projects-container">
+						<div class="project design cms" data-title="project 1" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, voluptatem.">
+							<div class="project__img">
+								<img src="images/web1.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title">project 1</h3>
+									<p class="project__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rerum.</p>
+								</div>
+							</div><!-- end .project__img -->
+
+
+						</div><!-- end .project -->
+						<div class="project programming" data-title="project 2" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, omnis!">
+							<div class="project__img">
+								<img src="images/web2.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project cms programming" data-title="project 3" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, est.">
+							<div class="project__img">
+								<img src="images/web3.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project design cms" data-title="project 4" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, repudiandae.">
+							<div class="project__img">
+								<img src="images/web4.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project cms programming" data-title="project 5" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quod!">
+							<div class="project__img">
+								<img src="images/web5.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project design" data-title="project 6" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, enim.">
+							<div class="project__img">
+								<img src="images/web6.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project programming" data-title="project 7" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ullam.">
+							<div class="project__img">
+								<img src="images/web7.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project design cms" data-title="project 8" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, perferendis.">
+							<div class="project__img">
+								<img src="images/web8.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project programming design" data-title="project 9" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, aliquam.">
+							<div class="project__img">
+								<img src="images/web9.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project cms" data-title="project 10" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, porro.">
+							<div class="project__img">
+								<img src="images/web10.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+						<div class="project cms" data-title="project 11" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, vitae.">
+							<div class="project__img">
+								<img src="images/web11.jpg" alt="" class="image">
+								<div class="project__overlay">
+									<h3 class="project__title"></h3>
+									<p class="project__desc"></p>
+								</div>
+							</div><!-- end .project__img -->
+
+						</div><!-- end .project -->
+					</div><!-- end .projects-container -->
+				</div><!-- end .inner-container -->
+			</section><!-- end .projects -->
+		</main><!-- end .main -->
+		<footer class="footer">
+			<div class="inner-container">
+				<p class="footer__content">copyright &copy; 2018, all rights reserved</p>
+			</div><!-- end .inner-container -->
+		</footer>
+	</div><!-- end .outer-container -->
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body></html>
